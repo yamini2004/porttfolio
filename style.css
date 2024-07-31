@@ -1,0 +1,252 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: times new roman, sans-serif;
+    background-color: #080808;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding:10px 10%;  
+}
+h1{
+font-size: 45px;
+margin-top: 20px;
+span {
+    color: #ff3030;
+    font-family: franklin gothic heavy;
+}
+}
+/* Header Section */
+#top {
+    background-color: #080808;
+    color: #fff;
+    padding: 50px 0;
+    text-align: left;
+    background-size: cover;
+    background-image:url("bg.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+.sub2{
+    width: 25vw;
+    position:relative;
+    display:flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.sub2 img{
+    width:min(25rem,90%);
+    border-radius: 100%;
+    }
+    img{
+        float:right;
+        margin-right: 10px;
+        border-radius:50%;
+    }
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position:fixed;
+    top:0;
+    left: 0;
+    padding: 0px 10%;
+    z-index:1;
+    backdrop-filter:blur(6px) ;
+    width:100vw;
+
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:10px 20px;
+}
+nav ul li a{
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 22px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height:3px;
+    background:#c22424;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.p1 {
+    margin-top: 20px;
+    
+}
+.inte {
+    margin-top: 50px;
+    order:1;
+    flex:1;
+    top:0;
+    right:0;
+}
+.inte ul {
+    list-style: none;
+    padding: 0;
+}
+.inte li {
+    margin-bottom: 10px;
+}
+/* About Section */
+#about {
+    background-color: #080808;
+    color:#f9f9f9;
+    padding: 50px 0;
+}
+.c1 {
+    flex-basis: 60%;
+}
+.hh1 {
+    color: #f9f9f9;
+    margin-bottom: 20px;
+}
+.pp1 {
+    color: #f9f9f9;
+    line-height: 1.6;
+}
+.title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.box {
+    padding: 10px;
+    width:150px;
+    border: 2px solid whitesmoke; /* Blue color from the header */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Add transitions */
+    display: flex;
+    justify-content: center;
+    color:#f9f9f9;
+}
+.box:hover {
+    background-color: #e63538; /* Change background color on hover */
+    color: #f9f9f9; /* Change text color on hover */
+}
+/* Add active styles for clicked box */
+.acti {
+    border-color: #fff; /* Change border color when clicked */
+}
+.lin-content {
+    display: none;
+    color:#f9f9f9;
+    font-weight: bold;
+}
+.lin-content.active {
+    display: block;
+    font-weight: bold;
+}
+/* Services Section */
+#services {
+    padding: 50px 0;
+    background-color:#080808;
+    text-align: center;
+}
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.service-list div {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: black;
+    color:beige;
+}
+
+.service-list div:hover {
+   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); */
+   background: #e63535;
+   color:white;
+    transform: translate(-20px);
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: #080808;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row p {
+    margin: 0;
+}
+
+.social a {
+    color: #fff;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #f9f9f9;
+}
+
+.bu {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #080808;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bu:hover {
+    background-color:  #e63538;
+    color: #333;
+}
+.top-left {
+    position: absolute;
+    top: 20px;
+    left:10px ;
+    width: 200px; 
+    height: auto; 
+}
+#p1{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #ff3030;
+}
+#p2,#p3{
+    margin-left: 150px;
+}
+#projects {
+    text-align: center;
+}
+#edu{
+    display:flex;
+}
